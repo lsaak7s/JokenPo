@@ -4,7 +4,8 @@ Um jogo de **Pedra, Papel e Tesoura** desenvolvido com **HTML, CSS e JavaScript*
 
 ## 📷 Preview
 
-<img width="1880" height="945" alt="Captura de tela 2026-08-04 201133" src="https://github.com/user-attachments/assets/360ce43b-b0c8-4916-b6fe-8fe7d220d84d" />
+<img width="1883" height="955" alt="image" src="https://github.com/user-attachments/assets/a4c3ad24-6b28-446d-a0c8-585649852bc2" />
+
 
 
 ---
