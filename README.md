@@ -1,5 +1,7 @@
 # 👊🖐️✌️ JokenPô
 
+⚙️ Este projeto está em desenvolvimento e recebe melhorias contínuas à medida que avanço nos estudos de JavaScript.
+
 Um jogo de **Pedra, Papel e Tesoura** desenvolvido com **HTML, CSS e JavaScript**, onde você joga contra o computador.
 
 ## 📷 Preview
