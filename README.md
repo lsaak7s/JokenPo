@@ -1,4 +1,4 @@
-# 👊✋✌️ JokenPô
+# 👊🖐️✌️ JokenPô
 
 Um jogo de **Pedra, Papel e Tesoura** desenvolvido com **HTML, CSS e JavaScript**, onde você joga contra o computador.
 
