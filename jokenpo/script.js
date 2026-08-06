@@ -6,15 +6,21 @@ const tesoura = document.getElementById('tesoura');
 const resultado = document.getElementById('resultado');
 const ponto = document.getElementById('ponto');
 const pontoComputador = document.getElementById('pontoComputador');
+// Criando um objeto para representar as opções do jogo ENUM
+const Opcao = {
+    PEDRA: 'pedra',
+    PAPEL: 'papel',
+    TESOURA: 'tesoura'
+};
 // Array Opeções
-const opcoes = ['pedra', 'papel', 'tesoura'];
+const opcoes = [Opcao.PEDRA, Opcao.PAPEL, Opcao.TESOURA];
 // contador de pontos
 let pontosUsuario = 0;
 let pontosComputador = 0;
 // Selecionando a opção do usuário, Com base na opção clicada, chamando a função jogar() passando a opção do usuário como parâmetro.Nossaaaa slk
-pedra.addEventListener('click', () => jogar('pedra'));
-papel.addEventListener('click', () => jogar('papel'));
-tesoura.addEventListener('click', () => jogar('tesoura'));
+pedra.addEventListener('click', () => jogar(Opcao.PEDRA));
+papel.addEventListener('click', () => jogar(Opcao.PAPEL));
+tesoura.addEventListener('click', () => jogar(Opcao.TESOURA));
 // Aqui e a logica simples do jogo ele compara a escolha do usuario com a do random do computador, e atualiza o resultado e os pontos de acordo com o resultado da partida.
 const jogar = (escolhaUsuario) => {
     const escolhaComputador = opcoes[Math.floor(Math.random() * opcoes.length)];
@@ -24,9 +30,9 @@ const jogar = (escolhaUsuario) => {
         pontosComputador++; pontoComputador.innerHTML = `${pontosComputador}`;
     }
     // Aqui e a parte do usuario ganhar
-    else if ((escolhaUsuario === 'pedra' && escolhaComputador === 'tesoura' ||
-        escolhaUsuario === 'papel' && escolhaComputador === 'pedra' ||
-        escolhaUsuario === 'tesoura' && escolhaComputador === 'papel')) {
+    else if ((escolhaUsuario === Opcao.PEDRA && escolhaComputador === Opcao.TESOURA ||
+        escolhaUsuario === Opcao.PAPEL && escolhaComputador === Opcao.PEDRA ||
+        escolhaUsuario === Opcao.TESOURA && escolhaComputador === Opcao.PAPEL)) {
         resultado.innerHTML = `Você Ganhou!`;
         pontosUsuario++; ponto.innerHTML = `${pontosUsuario}`;
     }
